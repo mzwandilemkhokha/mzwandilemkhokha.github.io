@@ -462,17 +462,17 @@
 @media screen and (min-device-width:480px){
     /*place timeline to the left*/
 .timeline::after{
-    left: 31px;
+    left: 5px;
 }
 /*full screen containers*/
 .contai{
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 /*make sure all arrows are pointing leftwards*/
 .contai::before{
-    left: 60px;
+    left: 10px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent ;
@@ -480,7 +480,7 @@
 }
 /*make sure the circles are at the same spot*/
 .left::after, .right::after{
-    left: 15px
+    left: 2px
 }
 /*make all the right containers behave like the right one*/
 .right{left: 0%;
