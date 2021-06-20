@@ -202,7 +202,7 @@
   .time h1,
   .contact h1{
     text-align: right;
-    font-size: 10rem;
+    font-size: 5rem;
     opacity: .1;
   }
   
@@ -458,6 +458,168 @@
     border-radius: 6px;
 }
 
+@media (min-width:320px){
+    /*place timeline to the leftz*/
+.timeline::after{
+  left: 31px;
+}
+/*full screen containers*/
+.contai{
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+/*make sure all arrows are pointing leftwards*/
+.contai::before{
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent ;
+  
+}
+/*make sure the circles are at the same spot*/
+.left::after, .right::after{
+  left: 15px
+}
+/*make all the right containers behave like the right one*/
+.right{left: 0%;
+}
+}
+@media (min-width:481px){
+    /*place timeline to the leftz*/
+.timeline::after{
+  left: 31px;
+}
+/*full screen containers*/
+.contai{
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+/*make sure all arrows are pointing leftwards*/
+.contai::before{
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent ;
+  
+}
+/*make sure the circles are at the same spot*/
+.left::after, .right::after{
+  left: 15px
+}
+/*make all the right containers behave like the right one*/
+.right{left: 0%;
+}
+}
+@media (min-width:641px){
+    /*place timeline to the leftz*/
+.timeline::after{
+  left: 31px;
+}
+/*full screen containers*/
+.contai{
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+/*make sure all arrows are pointing leftwards*/
+.contai::before{
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent ;
+  
+}
+/*make sure the circles are at the same spot*/
+.left::after, .right::after{
+  left: 15px
+}
+/*make all the right containers behave like the right one*/
+.right{left: 0%;
+}
+}
+@media (min-width:961px){
+    /*place timeline to the leftz*/
+.timeline::after{
+  left: 31px;
+}
+/*full screen containers*/
+.contai{
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+/*make sure all arrows are pointing leftwards*/
+.contai::before{
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent ;
+  
+}
+/*make sure the circles are at the same spot*/
+.left::after, .right::after{
+  left: 15px
+}
+/*make all the right containers behave like the right one*/
+.right{left: 0%;
+}
+}
+@media (min-width:1025px){
+    /*place timeline to the leftz*/
+.timeline::after{
+  left: 31px;
+}
+/*full screen containers*/
+.contai{
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+/*make sure all arrows are pointing leftwards*/
+.contai::before{
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent ;
+  
+}
+/*make sure the circles are at the same spot*/
+.left::after, .right::after{
+  left: 15px
+}
+/*make all the right containers behave like the right one*/
+.right{left: 0%;
+}
+}
+@media (min-width:1281px){
+    /*place timeline to the leftz*/
+.timeline::after{
+  left: 31px;
+}
+/*full screen containers*/
+.contai{
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+/*make sure all arrows are pointing leftwards*/
+.contai::before{
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent ;
+  
+}
+/*make sure the circles are at the same spot*/
+.left::after, .right::after{
+  left: 15px
+}
+/*make all the right containers behave like the right one*/
+.right{left: 0%;
+}
+}
 /*Media queries- responsive timeline on screens less than 600px wide*/
 @media screen and (max-width:600px){
     /*place timeline to the leftz*/
