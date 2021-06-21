@@ -475,6 +475,12 @@
     padding: 0;
     
      }
+     body{
+       min-height: 100%;
+       width: 100%;
+       box-sizing: border-box;
+       margin: 0;
+     }
   nav ul,
     .main-info-section,
     .work-category{
@@ -696,7 +702,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin:0px;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+
   }
   
   div[class^='tag-']{
@@ -848,8 +858,8 @@
 /*full screen containers*/
 .contai{
     width: 100%;
-    padding-left: 50px;
-    padding-right: 25px;
+    padding-left: 60px;
+    padding-right: 10px;
 }
 /*make sure all arrows are pointing leftwards*/
 .contai::before{
