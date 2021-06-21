@@ -338,7 +338,7 @@
   /*bullets*/
   .content ul{
      
-      margin: 1rem;
+     /* margin: 1rem;*/
       padding: 0;
       overflow: hidden;
       background-color:white;
@@ -355,7 +355,7 @@
       display: block;
       color: black;
       text-align: center;
-      padding: 16px;
+      padding: 10px;
       text-decoration:none;
   }
   .content li a:hover{
@@ -458,6 +458,8 @@
     border-radius: 6px;
 }
 
+/*handling for mobile cellphones*/
+
 @media (min-width:320px){
     /*place timeline to the leftz*/
 .timeline::after{
@@ -466,8 +468,8 @@
 /*full screen containers*/
 .contai{
   width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /*make sure all arrows are pointing leftwards*/
 .contai::before{
