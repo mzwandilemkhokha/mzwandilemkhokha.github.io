@@ -478,13 +478,13 @@
   nav ul,
     .main-info-section,
     .work-category{
-      width: 100%;
+      width: max-width;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
     body{
-      margin: 0px;
+      margin: 0px auto;
       padding: 0px auto;
       background-color: dimgray;
   
@@ -498,7 +498,7 @@
     }
   
     .navbar{
-      width: 100%;
+      width: max-content;
       background-color: darkslategrey;
     }
   
@@ -531,7 +531,7 @@
     }
   
     .main-info-section{
-      width: max-content;
+      width: 100%;
       height: calc(100vh-81.6px);
     }
   
@@ -612,7 +612,7 @@
       margin-top: 50px;
       margin-left: 25px;
       margin-right: 25px;
-    /*  padding: initial;*/
+      padding: initial;
       
      
     }
@@ -636,7 +636,7 @@
     padding-left: 25px;
     padding-right: 25px;
     position: relative;
-   /* top: -70px;*/
+    top: -70px;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
@@ -848,7 +848,7 @@
 /*full screen containers*/
 .contai{
     width: 100%;
-    padding-left: 10px;
+    padding-left: 50px;
     padding-right: 25px;
 }
 /*make sure all arrows are pointing leftwards*/
