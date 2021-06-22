@@ -518,7 +518,7 @@
       background-color: darkslategrey;
       position: relative;
     }
-    /*hide the links inside the navigation menu*/
+    /*hide the links inside the navigation menu
     .navbar #mylinks{
       display: none;
     }
@@ -777,7 +777,7 @@ color: black;
     cursor: pointer;
   }
 
-  /*bullets*/
+  /*bullets
   .content ul{
      
       margin: 1rem;
@@ -804,17 +804,17 @@ color: black;
       color: black;
   }
 
-    /*place timeline to the left*/
+    /*place timeline to the left
 .timeline::after{
     left: 31px;
 }
-/*full screen containers*/
+/*full screen containers
 .contai{
     width: 100%;
     padding-left: 60px;
     padding-right: 0px;
 }
-/*make sure all arrows are pointing leftwards*/
+/*make sure all arrows are pointing leftwards
 .contai::before{
     left: 60px;
     border: medium solid white;
@@ -822,11 +822,11 @@ color: black;
     border-color: transparent white transparent transparent ;
     
 }
-/*make sure the circles are at the same spot*/
+/*make sure the circles are at the same spot
 .left::after, .right::after{
     left: 15px
 }
-/*make all the right containers behave like the right one*/
+/*make all the right containers behave like the right one
 .right{left: 0%;
 }
 }*/
