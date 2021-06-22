@@ -16,7 +16,7 @@
   .container{
    padding: 0 100px 0 100px
     }
-    nav ul,
+    
     .main-info-section,
     .work-category{
       display: flex;
@@ -37,7 +37,34 @@
   
     .navbar{
       width: 100%;
+      overflow: hidden;
       background-color: darkslategrey;
+      position: relative;
+    }
+    /*hide the links inside the navigation menu*/
+    .navbar #mylinks{
+      display: none;
+    }
+    .navbar a{
+      color: whitesmoke;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+
+    .navbar a.icon{
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .navbar a:hover{
+background-color: blue;
+color: black;
+
     }
   
     header h1,
