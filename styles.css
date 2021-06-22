@@ -479,7 +479,9 @@
        min-height: 100%;
        width: 100%;
        box-sizing: border-box;
-       margin: 0;
+       margin: 0px;
+      
+       background-color: dimgray;
      }
   nav ul,
     .main-info-section,
@@ -489,13 +491,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    body{
-      margin: 0px auto;
-      padding: 0px auto;
-      background-color: dimgray;
-  
-  
-    }
+   
     header{
       display:flex;
       flex-wrap: wrap;
@@ -614,7 +610,8 @@
     }
   
     .profile-image{
-      width: 75px;
+
+      width:100%;
       margin-top: 50px;
       margin-left: 25px;
       margin-right: 25px;
