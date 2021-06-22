@@ -1833,7 +1833,7 @@ color: black;
   nav ul,
     .main-info-section,
     .work-category{
-      width: 100%;
+      
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -1989,7 +1989,7 @@ color: black;
   
     .profile-image{
 
-      width:100%;
+      width:641px;
       margin-top: 50px;
       margin-left: 25px;
       margin-right: 25px;
