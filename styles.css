@@ -469,7 +469,7 @@
 
 /*Media queries- responsive timeline on screens less than 600px wide*/
 @media screen and (max-width:600px){
-  /*.html{
+  .html{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -492,9 +492,9 @@
        width: 100%;
        box-sizing: border-box;
        margin: 0px;
-      
+      position: absolute;
        background-color: dimgray;
-     }*/
+     }
   nav ul,
     .main-info-section,
     .work-category{
