@@ -67,10 +67,6 @@ ul.topnav li.right {float: right;}
 }
 .text span{
   display:inline-block;
-  
-
-
-  
   color: whitesmoke;
 } 
 .text p{
@@ -80,8 +76,8 @@ ul.topnav li.right {float: right;}
 }
 
 .text a{
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
   padding: 12px 25px;
   background-color: none;
   border: 3px solid whitesmoke;
