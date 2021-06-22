@@ -468,7 +468,7 @@
 }
 
 /*Media queries- responsive timeline on screens less than 600px wide*/
-@media screen and (max-width:600px){
+/*@media screen and (max-width:600px){
   .html{
     display: flex;
     flex-wrap: wrap;
@@ -829,7 +829,7 @@ color: black;
 /*make all the right containers behave like the right one*/
 .right{left: 0%;
 }
-}
+}*/
 
 @media (min-width:320px){
   html{
