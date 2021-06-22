@@ -2,7 +2,7 @@
 *{
     margin:0;
   padding:0;
-  border: 0;
+ 
   box-sizing: border-box;
   font-family : 'PT Sans',sans-serif;
   }
@@ -469,10 +469,22 @@
 
 /*Media queries- responsive timeline on screens less than 600px wide*/
 @media screen and (max-width:600px){
+  .html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0px;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+  }
   .container{
   
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     
      }
      body{
@@ -513,7 +525,7 @@
     .work h1,
     .contact h1{
       color:white;
-      margin-top: 10px;
+      margin-top: 20px;
     }
   
     li{
@@ -621,6 +633,7 @@
     }
   
   .about{
+    width: 100%;
     height: 100vh;
     margin-top: 50px;
   }
@@ -633,7 +646,7 @@
     }
   
     .about-me-info{
-      max-width: 125px;
+      width: 100%;
       background-color: rgb(59, 58, 58);
       box-shadow: 0 0 1.2rem darkblue;
     padding-left: 25px;
@@ -647,6 +660,7 @@
   }
   
   .about-me-info p{
+    width: 100;
     font-size:1.3rem;
     color: whitesmoke;
   }
@@ -657,7 +671,7 @@
   }
   
   .about img{
-    width: 150px;
+    width:100%;
     position:relative;
     top: -75px;
     left: calc(100%-100px);
@@ -697,16 +711,7 @@
   
   }
   
-  .html{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin:0px;
-    min-height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-  }
+  
   
   div[class^='tag-']{
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
