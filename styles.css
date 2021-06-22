@@ -29,10 +29,8 @@
   
     }
     header{
-      display:flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-     /* padding: 20px 0;*/
+      width: 100%;
+
     }
 /*begining of navigation bar*/
 ul.topnav {
@@ -52,12 +50,92 @@ ul.topnav li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
 ul.topnav li a.active {background-color: #04AA6D;}
 
 ul.topnav li.right {float: right;}
+/*End of navigation bar properties*/
+
+/*First Paragraph below the navigation bar*/
+.main-info-section{
+  height: calc(100vh-81.6px);
+ padding-left: 10%;
+ padding-right: 10%;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.text span{
+  display:inline-block;
+  
+
+
+  
+  color: whitesmoke;
+} 
+.text p{
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: .8rem;
+}
+
+.text a{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 12px 25px;
+  background-color: none;
+  border: 3px solid whitesmoke;
+  color:blanchedalmond;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+  display: inline-block;
+}
+
+.text a:hover{
+  color: #fff;
+
+}
+
+.text a:before{
+ 
+  content: '';
+  background-color: #837d7e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: .5s;
+}
+
+.text a:hover::before{
+  height:100%;
+}
+
+span:hover{
+  color : blue;
+  transition: all .5s;
+
+}
+span.name{
+  color: #333;
+ 
+}
+span.m-left{
+color: whitesmoke;
+ }
+ .text p{
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: .8rem;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
