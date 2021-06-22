@@ -469,16 +469,6 @@
 
 /*Media queries- responsive timeline on screens less than 600px wide*/
 @media screen and (max-width:600px){
-  .html{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin:0px;
-    min-height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-  }
   .container{
   
     margin: 0;
@@ -513,37 +503,7 @@
   
     .navbar{
       width: 100%;
-      overflow: hidden;
       background-color: darkslategrey;
-      position: relative;
-    }
-    /*hide the links inside the navigation menu*/
-    .navbar #mylinks{
-      display: none;
-    }
-    .navbar a{
-      color: whitesmoke;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-    }
-
-    .navbar a.icon{
-      background: black;
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .navbar a:hover{
-background-color: blue;
-color: black;
-
-    }
-    .active{
-      background-color: grey;
     }
   
     header h1,
@@ -701,7 +661,7 @@ color: black;
   }
   
   .about img{
-    width:100%;
+    width: 150px;
     position:relative;
     top: -75px;
     left: calc(100%-100px);
@@ -741,7 +701,16 @@ color: black;
   
   }
   
-  
+  .html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0px;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+  }
   
   div[class^='tag-']{
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
