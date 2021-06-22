@@ -257,91 +257,7 @@ color: black;
     margin-bottom: 40px;
   }
   
-  div[class^='tag-']{
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-    width: 120px;
-    height: 30px;
-    background-color: grey;
-    margin-right: 30px;
-    
-  }
-  
-  div[class^='tag-'] p{
-    color: whitesmoke;
-    text-align: left;
-    padding-left: 10px;
-    font-size: 1.1rem;
-    padding-top: 3px;
-  }
-  
-  .progressbar{
-    position: relative;
-    width: 600px;
-    height: 20px;
-    border: 2px solid lightblue;
-    border-radius: 20px;
-    margin-top: 7px;
-  }
-  
-  div[class^='bar-']{
-  position: absolute;
-  background-color: whitesmoke;
-  height: 10px;
-  border-radius: 20px;
-  margin: 2.7px;
-  }
-  
-  .bar-html,
-  .bar-javascript,
-  .bar-css{
-    width:calc(0-6px);
-  
-  }
-  
-  .work-category button{
-    text-transform: capitalize;
-    border: 3px solid lightblue;
-    padding: 15px 30px;
-    border-radius: 50px;
-    color: whitesmoke;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    background-color: grey;
-    outline: none;
-    cursor:pointer;
-  
-  }
-  
-  div[class^='category-']{
-  margin-top: 50px;
-  display: 50px;
-  grid-template-columns: repeat(auto-fill,nimax(350px,1fr));
-  grid-gap:20px;
-  }
-  
-  .work a{
-    justify-self: center;
-    position: relative;
-    display: inline-block;
-  }
-  .work-category .active{
-    background-color: darkolivegreen;
-  }
-  
-  button.active{
-    color: white;
-  }
-  .work a img{
-    width: 350px;
-    justify-self: center;
-  
-  }
-  div.hideCategory{
-    display: none;
-  }
-  .div showCategory{
-    display:block;
-  }
+ 
   
   .contact{
     margin: 50px;
@@ -522,7 +438,7 @@ color: black;
       
        background-color: dimgray;
      }
-  nav ul,
+  
     .main-info-section,
     .work-category{
       width: 100%;
