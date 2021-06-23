@@ -143,7 +143,10 @@ color: whitesmoke;
   height: 100vh;
   margin-top: 100px;
 }
-  .about h1
+  .about h1,
+  .skills h1,
+  .contact h1,
+  .time h1
 {
   font-size: 10rem;
   z-index: 0;
@@ -200,7 +203,9 @@ a.about-me-info p:nth-child(2),
   margin: 0 auto;
   padding-left: 10%;
   padding-right: 10%;
+  
 }
+
 
 /*the actual timeline(the vertical ruler
 */
@@ -216,11 +221,16 @@ a.about-me-info p:nth-child(2),
 }
 /*content around container*/
 .contai{
+  
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
+  background-color:inherit;
   width: 50%;
 }
+.content text{
+  color: whitesmoke;
+}
+
 
 /*the circle on the timeline*/
 .contai::after{
@@ -256,7 +266,7 @@ a.about-me-info p:nth-child(2),
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white ;
+  border-color: transparent transparent transparent green ;
 
 
 }
@@ -281,17 +291,22 @@ left: -16px;
 /*the actual content*/
 .content{
 padding: 20px 30px;
-background-color: white;
+background-color: #333;
+box-shadow: lemonchiffon;
 position: relative;
 border-radius: 6px;
 text-align: center;
+}
+/*text color*/
+.content h2{
+  color: whitesmoke;
 }
 /*the bullet list of the content on the timeline*/
 .content li{
   margin: 1.1rem;
   float:inline-end;
   list-style-type: disc;
-  
+  color: whitesmoke;
 
 }
 .content li a{
@@ -306,6 +321,37 @@ text-align: center;
 }
 /*End of my timeline*/
 
+/*Begining of contact form*/
+.contact{
+  padding-right: 15%;
+  padding-left: 15%;
+}
+form input,
+  form textarea{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    
+    background-color: whitesmoke;
+    border: 3px solid dimgray;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: grey ;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+   
+  form input:last-child{
+    width: 150px;
+    background-color: darkgray;
+    border: none;
+    cursor: pointer;
+  }
+
+
 
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
@@ -317,5 +363,36 @@ text-align: center;
     padding-left: 20%;
     padding-right: 20%;
     /*padding: initial;*/
+  }
+
+  /*Begining of timeline*/
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
   }
   }
