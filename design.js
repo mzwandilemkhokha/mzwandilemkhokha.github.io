@@ -12,10 +12,10 @@ function myFunction() {
 
 function myFunction() {
     var x = document.getElementById("Topnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    if (x.className === "container topnav") {
+      x.className += "container responsive";
     } else {
-      x.className = "topnav";
+      x.className = "container topnav";
     }
   }
 
