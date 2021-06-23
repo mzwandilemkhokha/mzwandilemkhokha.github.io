@@ -404,7 +404,9 @@ form input,
       float: right;
       display: block;
     }
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: relative;
+    color:  #333;
+  width: 100%;}
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
