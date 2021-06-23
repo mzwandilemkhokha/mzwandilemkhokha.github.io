@@ -396,7 +396,7 @@ form input,
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   /*shows home only on navbar*/
  
     .topnav a:not(:first-child) {display: none;}
