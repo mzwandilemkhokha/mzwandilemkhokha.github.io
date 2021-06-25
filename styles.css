@@ -403,7 +403,7 @@ padding-right: 30%;
 
 
 
-@media only screen and(min-width: 320px) and (max-width: 480px) {
+@media only screen and(max-width: 768px) {
   /*shows home only on navbar*/
  
     .topnav a:not(:first-child) {display: none;}
@@ -441,7 +441,8 @@ padding-right: 30%;
 
   .profile-image{
     width: 100%;
-  
+  margin-left: 20%;
+  margin-right: 20%;
     padding-left: 20%;
     padding-right: 20%;
     /*padding: initial;*/
@@ -463,6 +464,7 @@ padding-right: 30%;
 /* Make sure that all arrows are pointing leftwards */
   .contai::before {
     left: 60px;
+    
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
