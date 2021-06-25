@@ -403,7 +403,7 @@ padding-right: 30%;
 
 
 
-@media only screen and(min-width:320px)and(max-width: 480px) {
+@media screen and(min-device-width:320px), screen and(max-device-width: 480px) {
   /*shows home only on navbar*/
 *{
     margin:0;
@@ -527,7 +527,7 @@ a.about-me-info p:nth-child(2),
     left: 0%;
   }
   }
-  @media only screen and(min-width:481px)and(max-width: 768px) {
+  @media screen and(min-device-width:481px), screen and(max-device-width: 768px) {
     *{
       margin:0;
     padding:0;
@@ -650,7 +650,7 @@ a.about-me-info p:nth-child(2),
       left: 0%;
     }
   }
-  @media only screen and(min-width:769px)and(max-width: 1024px) {
+  @media screen and(min-device-width:769px), screen and(max-device-width: 1024px) {
     *{
       margin:0;
     padding:0;
