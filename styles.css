@@ -113,6 +113,7 @@ ul.topnav li.right {float: right;}*/
   color: whitesmoke;
 } 
 .text p{
+  
   letter-spacing: 3px;
   word-spacing: 10px;
   font-size: .8rem;
@@ -388,7 +389,9 @@ form input,
   }
    
   form input:last-child{
-    width: 150px;
+width: 100%;
+padding-left: 30%;
+padding-right: 30%;
     background-color: darkgray;
     border: none;
     cursor: pointer;
@@ -406,6 +409,7 @@ form input,
     }
     .topnav.responsive {position: relative;
     color:  #333;
+   
   width: 100%;}
     .topnav.responsive a.icon {
       position: absolute;
