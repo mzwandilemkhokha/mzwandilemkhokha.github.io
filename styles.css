@@ -474,6 +474,26 @@ padding-right: 30%;
   padding-bottom: 5%;
 
   }
+  .about-me-info{
+    width: 100%;
+    background-color:  #333;
+    box-shadow: 0 0 1.2rem skyblue;
+  padding-right: 20%;
+  padding-left: 20%;
+  position:initial;
+  transform: translateX(-50%);
+z-index: 1;  
+}
+
+.about-me-info p{
+  font-size:1.3rem;
+  color: whitesmoke;
+}
+
+a.about-me-info p:nth-child(2),
+.about-me-info p:last-child{
+  margin-top: 30px;
+}
 
   /*Begining of timeline*/
   /* Place the timelime to the left */
