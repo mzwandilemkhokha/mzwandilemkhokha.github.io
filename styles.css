@@ -527,7 +527,7 @@ a.about-me-info p:nth-child(2),
     left: 0%;
   }
   }
-  @media screen and(max-device-width: 600px) {
+  @media screen and(max-device-width: 768px) {
     .topnav.responsive{position: relative;}
     .topnav.responsive a.icon{
       position:absolute;
