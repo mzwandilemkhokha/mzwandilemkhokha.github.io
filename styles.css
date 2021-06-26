@@ -599,10 +599,18 @@ a.about-me-info p:nth-child(2),
       
     }
   
+    .time h1
+  {
+    font-size: 0.5rem;
+    z-index: 0;
+    opacity: .1;
+    padding-bottom: 5%;
+  
+    }
     .about h1,
     .skills h1,
-    .contact h1,
-    .time h1
+    .contact h1
+    
   {
     font-size: 1rem;
     z-index: 0;
