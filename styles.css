@@ -370,7 +370,7 @@ padding-right: 30%;
 
 
   
-  @media only screen and(max-device-width: 768px) {
+  @media screen and(max-width: 768px) {
     
    
     .topnav a:not(:first-child) {display: none;}
@@ -483,7 +483,7 @@ padding-right: 30%;
       left: 0%;
     }
   }
-  @media screen and(max-device-width: 768px) {
+  @media screen and(max-width: 768px) {
     .topnav.responsive{position: relative;}
     .topnav.responsive a.icon{
       position:absolute;
@@ -497,7 +497,7 @@ padding-right: 30%;
     }
 
   }
-  @media only screen and(min-width:320px) and(max-width: 600px) {
+  @media screen and((max-width: 600px) {
    
     /*shows home only on navbar*/
     .topnav a:not(:first-child) {display: none;}
