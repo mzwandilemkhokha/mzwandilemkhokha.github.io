@@ -1,4 +1,3 @@
-
 *{
     margin:0;
   padding:0;
@@ -89,19 +88,19 @@ ul.topnav li.right {float: right;}*/
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {
+topnav a.active {
   background-color: #04AA6D;
   color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+topnav .icon {
   display: none;
 }
 
@@ -188,7 +187,7 @@ color: whitesmoke;
 }
 /*About me info section which shows a box with sky blue shadow*/
 .about{
- 
+ width: 100%;
   height: 100vh;
   margin-top: 100px;
 }
@@ -502,7 +501,7 @@ a.about-me-info p:nth-child(2),
 
 /* Full-width containers */
   .contai {
-    width: 100%;
+   
     padding-left: 70px;
     padding-right: 25px;
   }
