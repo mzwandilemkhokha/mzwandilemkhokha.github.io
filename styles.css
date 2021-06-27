@@ -497,7 +497,7 @@ padding-right: 30%;
     }
 
   }
-  @media screen and(max-width: 600px) {
+  @media screen and(max-width: 800px) {
    
     /*shows home only on navbar*/
     .topnav a:not(:first-child) {display: none;}
@@ -603,7 +603,7 @@ padding-right: 30%;
     left: 0%;
   }
     }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
