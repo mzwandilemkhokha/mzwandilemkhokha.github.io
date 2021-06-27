@@ -545,6 +545,11 @@ padding-right: 30%;
 
   }
   @media only screen and(min-width:320px) and(max-width: 600px) {
+    .container{
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+       }
     /*shows home only on navbar*/
   
       .topnav a:not(:first-child) {display: none;}
@@ -581,6 +586,7 @@ padding-right: 30%;
     }*/
   
     .profile-image{
+      
       width: 100%;
       padding-left: 20%;
       padding-right: 20%;
@@ -642,7 +648,7 @@ padding-right: 30%;
   
   /* Full-width containers */
     .contai {
-     
+     display: inline-block;
       padding-left: 70px;
       padding-right: 25px;
     }
@@ -667,6 +673,12 @@ padding-right: 30%;
     }
     }
     @media only screen and(min-width:320px) and(max-width: 600px) {
+       
+  .container{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+     }
       .topnav.responsive{position: relative;}
       .topnav.responsive a.icon{
         position:absolute;
@@ -678,5 +690,6 @@ padding-right: 30%;
         display: block;
         text-align: left;
       }
+
   
     }
