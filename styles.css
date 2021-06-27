@@ -405,7 +405,7 @@ padding-right: 30%;
 
 
 
-@media screen and(min-width: 600px) {
+  @media only screen and(min-width:320px) and(max-width: 600px) {
   /*shows home only on navbar*/
 
     .topnav a:not(:first-child) {display: none;}
@@ -527,7 +527,7 @@ a.about-me-info p:nth-child(2),
     left: 0%;
   }
   }
-  @media screen and(max-device-width: 600px) {
+  @media only screen and(min-width:320px) and(max-width: 600px) {
     .topnav.responsive{position: relative;}
     .topnav.responsive a.icon{
       position:absolute;
@@ -541,15 +541,8 @@ a.about-me-info p:nth-child(2),
     }
 
   }
-  @media screen and(max-device-width: 768px) {
-    *{
-      margin:0;
-    padding:0;
-   
-    box-sizing: border-box;
-    font-family : 'PT Sans',sans-serif;
-    }
-      .topnav a:not(:first-child) {display: none;}
+  @media only screen and(max-device-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
       .topnav a.icon {
         float: right;
         display: block;
