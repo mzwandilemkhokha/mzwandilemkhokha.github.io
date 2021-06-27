@@ -625,7 +625,7 @@ padding-right: 30%;
       box-shadow: 0 0 1.2rem skyblue;
     padding-right: 20%;
     padding-left: 20%;
-    position:initial;
+    position:relative;
     transform: translateX(-50%);
   z-index: 1;  
   }
@@ -681,7 +681,7 @@ padding-right: 30%;
      }
       .topnav.responsive{position: relative;}
       .topnav.responsive a.icon{
-        position:absolute;
+        position:initial;
         right: 0;
         top: 0;
       }
