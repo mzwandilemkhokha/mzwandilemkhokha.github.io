@@ -1,4 +1,4 @@
-/*Toggle between showing and hiding the navigation menu
+/*Toggle between showing and hiding the navigation menu*/
 function myFunction() {
     var x = document.getElementById("mylinks");
     if (x.style.display === "block") {
@@ -8,8 +8,8 @@ function myFunction() {
         x.style.display ="block"
     }
 
-}*/
-
+}
+/*
 function myFunction() {
     var x = document.getElementById("Topnav");
     if (x.className === "topnav") {
@@ -19,3 +19,4 @@ function myFunction() {
     }
   }
 
+*/
