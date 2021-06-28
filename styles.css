@@ -281,16 +281,6 @@ a.about-me-info p:nth-child(2),
 
 /*the actual timeline(the vertical ruler
 */
-.timeline::after{
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top:0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
 
 .content text{
   color: whitesmoke;
