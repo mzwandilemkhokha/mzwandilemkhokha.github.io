@@ -347,14 +347,14 @@ a.about-me-info p:nth-child(2),
   }
 
 /* Full-width containers */
-  .container {
+  .contai {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
 /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  .contai::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
