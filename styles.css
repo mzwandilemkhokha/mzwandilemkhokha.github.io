@@ -318,6 +318,15 @@ a.about-me-info p:nth-child(2),
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }
+/*the actual content*/
+.content{
+  padding: 20px 30px;
+  background-color: #333;
+  box-shadow: lemonchiffon;
+  position: relative;
+  border-radius: 6px;
+  text-align: center;
+  }
 
 /* Make sure all circles are at the same spot */
 .left::after, .right::after {
