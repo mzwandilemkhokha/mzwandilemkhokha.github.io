@@ -305,11 +305,7 @@ a.about-me-info p:nth-child(2),
 }
 
 /* Full-width containers */
-.contai {
-  
-  padding-left: 25px;
-  padding-right: 75px;
-}
+
 
 /* Make sure that all arrows are pointing leftwards */
 .contai::before {
