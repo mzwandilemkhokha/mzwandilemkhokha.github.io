@@ -35,7 +35,7 @@
 
     }
 
-  @media only screen and(min-width: 100px)and(max-width: 800px) {
+  @media screen and(max-width: 800px) {
    
     /*shows home only on navbar*/
     .topnav a:not(:first-child) {
@@ -144,7 +144,7 @@
     left: 0%;
   }
     }
-@media only screen and(min-width:100px) and(max-width: 800px){
+@media screen and(max-width: 800px){
     .topnav.responsive {position: relative;
     width: 100%;}
   .topnav.responsive a.icon {
