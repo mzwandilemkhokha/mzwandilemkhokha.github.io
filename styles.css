@@ -10,7 +10,10 @@
   
    padding: 0 auto;
   }
- #container{animation-timing-function: ease-in;}
+ #container{transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;}
   .container{
   padding-left: 10%;
   padding-right: 10%;
