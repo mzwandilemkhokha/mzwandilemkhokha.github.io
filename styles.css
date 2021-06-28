@@ -55,7 +55,7 @@
 }
 
 /* Container around content */
-.container {
+.contai {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -63,7 +63,7 @@
 }
 
 /* The circles on the timeline */
-.container::after {
+.contai::after {
   content: '';
   position: absolute;
   width: 25px;
