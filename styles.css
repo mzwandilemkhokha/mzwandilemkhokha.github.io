@@ -75,9 +75,82 @@
   .profile-image{
       
     width: 100%;
+    max-width: 100%;
     padding-left: 20%;
     padding-right: 20%;
     /*padding: initial;*/
+  }
+  .main-info-section{
+    height: calc(100vh-81.6px);
+   padding-left: 10%;
+   padding-right: 10%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .text span{
+    display:inline-block;
+    color: whitesmoke;
+  } 
+  .text p{
+    
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .8rem;
+  }
+  
+  .text a{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid whitesmoke;
+    color:whitesmoke;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+  }
+  
+  .text a:hover{
+    color: #fff;
+  
+  }
+  
+  .text a:before{
+   
+    content: '';
+    background-color: #837d7e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+  }
+  
+  .text a:hover::before{
+    height:100%;
+  }
+  
+  span:hover{
+    color : blue;
+    transition: all .5s;
+  
+  }
+  span.name{
+    color: #333;
+   
+  }
+  span.m-left{
+  color: whitesmoke;
+   }
+   .text p{
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .8rem;
   }
   .badge{
     width: 100%;
