@@ -10,10 +10,24 @@
   
    padding: 0 auto;
   }
- #container{transition-property: width;
+ /*#container{transition-property: width;
   transition-duration: 2s;
   transition-timing-function: linear;
-  transition-delay: 1s;}
+  transition-delay: 1s;}*/
+  @keyframes wipe-enter {
+    0% {
+      transform: scale(0, .025);
+    }
+    50% {
+      transform: scale(1, .025);
+    }
+  }
+  .container-animation {
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
   .container{
   padding-left: 10%;
   padding-right: 10%;
@@ -319,7 +333,8 @@
 
   .about h1,
   .skills h1,
-  .contact h1
+  .contact h1,
+  .badges h1
 {
   font-size: 1.5rem;
   z-index: 0;
