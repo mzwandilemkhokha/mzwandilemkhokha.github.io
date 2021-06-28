@@ -132,9 +132,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .square-animation {
+  .container-animation {
     animation: wipe-enter 1s 1;
   }
+}
   @media screen and (max-width: 800px) {
    
     /*shows home only on navbar
