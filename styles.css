@@ -451,8 +451,8 @@ padding-right: 30%;
 /* Full-width containers */
   .contai {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 10%;
+    padding-right: 10%px;
   }
 
 /* Make sure that all arrows are pointing leftwards */
