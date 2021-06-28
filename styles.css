@@ -70,7 +70,7 @@
   }
   
   
-  .topnav.responsive {position:initial;
+  .topnav.responsive {position:relative;
     width: 100%;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -84,7 +84,7 @@
   }
   .profile-image{
       
-    width: 100%;
+    width: 50%;
     margin-left: 20%;
     margin-right: 20%;
     padding-left: 20%;
@@ -214,6 +214,15 @@ a.about-me-info p:nth-child(2),
   /*Begining of timeline*/
   /* Place the timelime to the left */
  /* Place the timelime to the left */
+
+ .timeline{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
 .timeline::after {
   left: 31px;
 }
