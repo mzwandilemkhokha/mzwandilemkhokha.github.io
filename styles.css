@@ -38,11 +38,14 @@
   @media only screen and(min-width: 100px)and(max-width: 800px) {
    
     /*shows home only on navbar*/
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) {
+     
+      display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
+    
     /*.topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -439,7 +442,7 @@ text-align: center;
 .content h2{
   color: whitesmoke;
 }
-/*the bullet list of the content on the timeline*/
+/*the bullet list of the content on the timeline
 .content li{
   margin: 1.1rem;
   float:inline-end;
@@ -456,7 +459,7 @@ text-align: center;
 }
 .content li a:hover{
   color:skyblue;
-}
+}*/
 /*End of my timeline*/
 
 /*Begining of contact form*/
