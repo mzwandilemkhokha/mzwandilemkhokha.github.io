@@ -10,10 +10,11 @@
   
    padding: 0 auto;
   }
-  
+  .container{animation-timing-function: ease-in;}
   .container{
   padding-left: 10%;
   padding-right: 10%;
+
     }
   
     .main-info-section,
