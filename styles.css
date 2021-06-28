@@ -37,14 +37,14 @@
 
   @media screen and (max-width: 800px) {
    
-    /*shows home only on navbar*/
+    /*shows home only on navbar
     .topnav a:not(:first-child) {
      
       display: none;}
     .topnav a.icon {
       float: right;
       display: block;
-    }
+    }*/
     
     /*.topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -60,7 +60,17 @@
     
     }
 @media screen and (max-width: 800px){
-    .topnav.responsive {position:initial;
+  /*shows home only on navbar*/
+  .topnav a:not(:first-child) {
+     
+    display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  
+  .topnav.responsive {position:initial;
     width: 100%;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -231,6 +241,37 @@ a.about-me-info p:nth-child(2),
 .right {
   left: 0%;
 }
+
+.contact{
+  padding-right: 15%;
+  padding-left: 15%;
+}
+form input,
+  form textarea{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    
+    background-color: whitesmoke;
+    border: 3px solid dimgray;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: grey ;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+   
+  form input:last-child{
+width: 100%;
+padding-left: 30%;
+padding-right: 30%;
+    background-color: darkgray;
+    border: none;
+    cursor: pointer;
+  }
 }
 @media only screen and (min-width:1024)and(max-width: 1200px) {
 /*begining of navigation bar
