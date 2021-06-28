@@ -314,6 +314,10 @@ a.about-me-info p:nth-child(2),
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }
+/*fix the circle for containers on the right side*/
+.right::after{
+  left: -16px;
+  }
 /*the actual content*/
 .content{
   padding: 20px 30px;
