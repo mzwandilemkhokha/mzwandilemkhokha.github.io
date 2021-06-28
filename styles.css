@@ -120,11 +120,11 @@
   }
   .profile-image{
       
-    width: 50%;
+    width: 100%;
     margin-left: 20%;
     margin-right: 20%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 40%;
+    padding-right: 40%;
     /*padding: initial;*/
   }
   .main-info-section{
@@ -210,7 +210,7 @@
   }
   .time h1
   {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     z-index: 0;
     opacity: .1;
     padding-bottom: 5%;
@@ -220,7 +220,7 @@
   .skills h1,
   .contact h1
 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   z-index: 0;
   opacity: .1;
   padding-bottom: 5%;
@@ -232,7 +232,7 @@
     box-shadow: 0 0 1.2rem skyblue;
   padding-right: 20%;
   padding-left: 20%;
-  position:initial;
+  position:relative;
  /* transform: translateX(-50%);*/
 /*z-index: 1;*/  
 }
@@ -259,6 +259,47 @@ a.about-me-info p:nth-child(2),
   padding-right: 10%;
   
 }
+/*psw*/
+
+/*the actual timeline(the vertical ruler
+*/
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top:0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/*content around container*/
+.contai{
+  
+  padding: 10px 40px;
+  position: relative;
+  background-color:inherit;
+  width: 50%;
+}
+.content text{
+  color: whitesmoke;
+}
+
+
+/*the circle on the timeline*/
+.contai::after{
+  content: '';
+  position:absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/*psw*/
 .timeline::after {
   left: 31px;
 }
