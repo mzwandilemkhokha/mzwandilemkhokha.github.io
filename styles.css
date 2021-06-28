@@ -250,6 +250,7 @@ a.about-me-info p:nth-child(2),
   /*Begining of timeline*/
   /* Place the timelime to the left */
  /* Place the timelime to the left */
+/*content around container*/
 
  .timeline{
   position: relative;
@@ -258,6 +259,23 @@ a.about-me-info p:nth-child(2),
   padding-left: 10%;
   padding-right: 10%;
   
+}
+/* Place the timelime to the left */
+.timeline::after {
+  left: 31px;
+}
+.contai{
+  
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+/* Make sure that all arrows are pointing leftwards */
+.contai::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
 /*psw*/
 
@@ -273,14 +291,7 @@ a.about-me-info p:nth-child(2),
   left: 50%;
   margin-left: -3px;
 }
-/*content around container*/
-.contai{
-  
-  padding: 10px 40px;
-  position: relative;
-  background-color:inherit;
-  width: 50%;
-}
+
 .content text{
   color: whitesmoke;
 }
@@ -299,25 +310,13 @@ a.about-me-info p:nth-child(2),
   border-radius: 50%;
   z-index: 1;
 }
-/*psw*/
-.timeline::after {
-  left: 31px;
-}
-
-/* Full-width containers */
 
 
-/* Make sure that all arrows are pointing leftwards */
-.contai::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-/*fix the circle for containers on the right side*/
-.right::after{
-  left: -16px;
-  }
+
+
+
+
+
 /*the actual content*/
 .content{
   padding: 20px 30px;
