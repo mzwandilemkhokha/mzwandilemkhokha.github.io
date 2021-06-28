@@ -25,17 +25,19 @@
     }
     body{
       background-color: dimgray;
-margin: 0;  
-  padding:0 auto;
+
     }
     header{
       width: 100%;
+      padding: 0% auto;
+      margin: 0% auto;;
 
 
     }
 /*begining of navigation bar
 /* Add a black background color to the top navigation */
 .topnav {
+  width: 100%;
   background-color: #333;
   overflow: hidden;
 }
