@@ -131,7 +131,10 @@
   border-radius: 6px;
 }
 
-
+@media (prefers-reduced-motion: no-preference) {
+  .square-animation {
+    animation: wipe-enter 1s 1;
+  }
   @media screen and (max-width: 800px) {
    
     /*shows home only on navbar
