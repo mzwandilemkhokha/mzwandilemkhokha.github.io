@@ -14,6 +14,16 @@
   transition-duration: 2s;
   transition-timing-function: linear;
   transition-delay: 1s;}*/
+  .fadesample { 
+    animation-name: fadeIn; 			/*	// which named animation?*/
+    animation-duration: 3s;        			/*/ how long?*/
+    animation-iteration-count:infinite;  	/*/ keep going?*/
+    } 
+  @keyframes fadeIn { 
+    0% {opacity: 0;} /*/ CSS properties at start*/
+    100% {opacity: 1;} /*/ CSS properties at end*/
+    }    
+
   @keyframes wipe-enter {
     0% {
       transform: scale(0, .025);
@@ -150,6 +160,8 @@
     animation: wipe-enter 1s 1;
   }
 }
+
+
   @media screen and (max-width: 800px) {
    
     /*shows home only on navbar
