@@ -16,11 +16,13 @@
   transition-delay: 1s;}*/
   .fadesample { 
     animation-name: fadeIn; 			/*	// which named animation?*/
-    animation-duration: 3s;        			/*/ how long?*/
+    animation-duration: 6s;        			/*/ how long?*/
     animation-iteration-count:infinite;  	/*/ keep going?*/
     } 
   @keyframes fadeIn { 
     0% {opacity: 0;} /*/ CSS properties at start*/
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;}
     100% {opacity: 1;} /*/ CSS properties at end*/
     }    
 
