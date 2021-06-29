@@ -17,7 +17,7 @@
   .fadesample { 
     animation-name: fadeIn; 			/*	// which named animation?*/
     animation-duration: 6s;        			/*/ how long?*/
-    animation-iteration-count:infinite;  	/*/ keep going?*/
+    animation-iteration-count:1;  	/*/ keep going?*/
     } 
   @keyframes fadeIn { 
     0% {opacity: 0;} /*/ CSS properties at start*/
