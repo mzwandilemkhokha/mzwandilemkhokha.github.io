@@ -157,6 +157,10 @@
   border-radius: 6px;
 }
 
+.backImg{
+  visibility: hidden;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .container-animation {
     animation: wipe-enter 1s 1;
@@ -488,6 +492,53 @@ padding-right: 30%;
   display: none;
 }
 
+.backImg {
+  /* Background image */
+  background-image: url(backImg.png);
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+
 .badge{
   width: 100%;
 }
@@ -642,119 +693,6 @@ a.about-me-info p:nth-child(2),
 }
 
 
-/*the actual timeline(the vertical ruler
-*/
-.timeline::after{
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top:0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-/*content around container*/
-.contai{
-  
-  padding: 10px 40px;
-  position: relative;
-  background-color:inherit;
-  width: 50%;
-}
-.content text{
-  color: whitesmoke;
-}
-
-
-/*the circle on the timeline*/
-.contai::after{
-  content: '';
-  position:absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/*place the container to the left*/
-.left{
-  left: 0;
-}
-/*place container on the right*/
-.right{
-  left: 50%;
-}
-
-/*Add arrows to the left container*/
-.left::before{
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent green ;
-
-
-}
-
-/*add arrows to the right container(pointing left)*/
-.right::before{
-content: " ";
-height: 0;
-position: absolute;
-top: 22px;
-width: 0;
-z-index: 1;
-left: 30px;
-border: medium solid white;
-border-width: 10px 10px 10px 0 ;
-border-color: transparent transparent transparent white ;
-}
-/*fix the circle for containers on the right side*/
-.right::after{
-left: -16px;
-}
-/*the actual content*/
-.content{
-padding: 20px 30px;
-background-color: #333;
-box-shadow: lemonchiffon;
-position: relative;
-border-radius: 6px;
-text-align: center;
-}
-/*text color*/
-.content h2{
-  color: whitesmoke;
-}
-/*the bullet list of the content on the timeline
-.content li{
-  margin: 1.1rem;
-  float:inline-end;
-  list-style-type: disc;
-  color: whitesmoke;
-
-}
-.content li a{
-  display: block;
-  color: skyblue;
-  list-style-position: inherit;
-  
-  text-decoration:none;
-}
-.content li a:hover{
-  color:skyblue;
-}*/
-/*End of my timeline*/
 
 /*Begining of contact form*/
 .contact{
