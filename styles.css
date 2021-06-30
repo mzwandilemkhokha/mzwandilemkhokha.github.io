@@ -457,7 +457,7 @@ padding-right: 30%;
 }
 @media only screen and (min-width:1024)and(max-width: 1200px) {
   .backImg{
-    display:visibility;
+    display:block;
   }
   .container-animation{
     display: none;
