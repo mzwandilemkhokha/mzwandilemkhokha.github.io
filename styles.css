@@ -459,6 +459,9 @@ padding-right: 30%;
   .backImg{
     display:block;
   }
+  .topnav{
+    display: none;
+  }
   .container-animation{
     display: none;
   }
