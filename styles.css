@@ -482,11 +482,11 @@ padding-right: 30%;
   /* Full-screen */
   height: 100%;
   /* Center the background image */
-  background-position: center;
+  background-position:initial;
   /* Scale and zoom in the image */
   background-size: cover;
   /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
+  position:absolute;
   /* Add a white text color to all elements inside the .bgimg container */
   color: white;
   /* Add a font */
