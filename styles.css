@@ -455,7 +455,7 @@ padding-right: 30%;
     cursor: pointer;
   }
 }
-@media only screen and (min-width:769) and (max-width: 1366px) {
+@media only screen and (min-width:768) and (max-width: 1366px) {
   .backImg{
     display:block;
   }
