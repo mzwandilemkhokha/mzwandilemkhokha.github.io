@@ -462,6 +462,9 @@ padding-right: 30%;
   .topnav.responsive{
     display: none;
   }
+  .topnav{
+    display: none;
+  }
   .container-animation{
     display: none;
   }
@@ -511,7 +514,7 @@ padding-right: 30%;
 }
 
 /* Style the <hr> element */
-hr {
+.hr {
   margin: auto;
   width: 40%;
 }
