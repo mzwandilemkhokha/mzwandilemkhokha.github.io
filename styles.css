@@ -457,16 +457,16 @@ padding-right: 30%;
 }
 @media only screen and (min-width:768) and(max-width: 1366px) {
   .backImg{
-    display:block;
+   visibility: visible;
   }
   .topnav.responsive{
-    display: none;
+    visibility: hidden;
   }
   .container-animation{
-    display: none;
+    visibility: hidden;
   }
   .container{
-   display: none;
+    visibility: hidden;
   }
   
 .backImg {
