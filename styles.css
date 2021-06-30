@@ -160,6 +160,12 @@
 .backImg{
   visibility: hidden;
 }
+.container-animation{
+  visibility: hidden;
+}
+.container{
+  visibility: hidden;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .container-animation {
@@ -456,42 +462,9 @@ padding-right: 30%;
   }
 }
 @media only screen and (min-width:1024)and(max-width: 1200px) {
-/*begining of navigation bar
-/* Add a black background color to the top navigation */
-.topnav {
-  width: 100%;
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
+  .backImg{
+    visibility:visible;
+  }
 .backImg {
   /* Background image */
   background-image: url(backImg.png);
@@ -539,214 +512,4 @@ hr {
   width: 40%;
 }
 
-.badge{
-  width: 100%;
 }
-/*First Paragraph below the navigation bar*/
-.main-info-section{
-  height: calc(100vh-81.6px);
- padding-left: 10%;
- padding-right: 10%;
- margin-top: 10px;
- margin-bottom: 10px;
-}
-.text span{
-  display:inline-block;
-  color: whitesmoke;
-} 
-.text p{
-  
-  letter-spacing: 3px;
-  word-spacing: 10px;
-  font-size: .8rem;
-}
-
-.text a{
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-  padding: 12px 25px;
-  background-color: none;
-  border: 3px solid whitesmoke;
-  color:whitesmoke;
-  font-size: .8rem;
-  letter-spacing: 2px;
-  position: relative;
-  overflow: hidden;
-  transition: .5s;
-  display: inline-block;
-}
-
-.text a:hover{
-  color: #fff;
-
-}
-
-.text a:before{
- 
-  content: '';
-  background-color: #837d7e;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0%;
-  z-index: -1;
-  transition: .5s;
-}
-
-.text a:hover::before{
-  height:100%;
-}
-
-span:hover{
-  color : blue;
-  transition: all .5s;
-
-}
-span.name{
-  color: #333;
- 
-}
-span.m-left{
-color: whitesmoke;
- }
- .text p{
-  letter-spacing: 3px;
-  word-spacing: 10px;
-  font-size: .8rem;
-}
-/*the divider that shows a profile image of the webpage*/
-.profile-image{
-  width: 100%;
-  margin:10%;
-  padding-left: 20%;
-  padding-right: 20%;
-  /*padding: initial;*/
-}
-/*About me info section which shows a box with sky blue shadow*/
-.about{
- width: 100%;
-  height: 100vh;
-  margin-top: 100px;
-}
-  .about h1,
-  .skills h1,
-  .contact h1,
-  .time h1
-{
-  font-size: 10rem;
-  z-index: 0;
-  opacity: .1;
-  padding-bottom: 5%;
-
-  }
-
-  .about-me-info{
-    max-width: 900px;
-    background-color:  #333;
-    box-shadow: 0 0 1.2rem skyblue;
-  padding: 50px;
-  position: relative;
-  top: -70px;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-z-index: 1;  
-}
-
-.about-me-info p{
-  font-size:1.3rem;
-  color: whitesmoke;
-}
-
-a.about-me-info p:nth-child(2),
-.about-me-info p:last-child{
-  margin-top: 30px;
-}
-/*End of the about me section of the webpage*/
-
-/*The begininng of the skills section*/
-.skills{
-  height: 100vh;
-}
-.skills-info{
-  font: size 1.4rem;
-  color: white;
-  
- padding-right: 20%;
- padding-left: 20%;
-
-  text-align: center;
-  
-}
-/*End of the skills section of the site*/
-
-/*Below is the beginning of my timeline*/
-/*the actual timeline (vertical ruler) */
-.timeline{
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  padding-left: 10%;
-  padding-right: 10%;
-  
-}
-
-
-
-/*Begining of contact form*/
-.contact{
-  padding-right: 15%;
-  padding-left: 15%;
-}
-form input,
-  form textarea{
-    display: block;
-    width: 100%;
-    padding: 20px;
-    
-    background-color: whitesmoke;
-    border: 3px solid dimgray;
-    margin: 20px 0;
-    outline: none;
-    font-size: 1.2rem;
-    color: grey ;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-  }
-   
-  form input:last-child{
-width: 100%;
-padding-left: 30%;
-padding-right: 30%;
-    background-color: darkgray;
-    border: none;
-    cursor: pointer;
-  }
-
-}
-  
-
-    /*@media only screen and(min-width:320px) and(max-width: 600px) {
-       
-  .container{
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-     }
-      .topnav.responsive{position: relative;}
-      .topnav.responsive a.icon{
-        position:initial;
-        right: 0;
-        top: 0;
-      }
-      .topnav.responsive a{
-        float: none;
-        display: block;
-        text-align: left;
-      }
-
-  
-    }*/
