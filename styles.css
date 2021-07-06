@@ -165,14 +165,14 @@
   display: none;
 }
 /*Scroll style*/
-#pinContainer {
+#pinCont {
   width: 100%;
   height: 100%;
   overflow: hidden;
   -webkit-perspective: 1000;
           perspective: 1000;
 }
-#slideContainer {
+#slideCont {
   width: 400%; /* to contain 4 panels, each with 100% of window width */
   height: 100%;
 }
