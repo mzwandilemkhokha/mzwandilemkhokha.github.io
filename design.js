@@ -9,28 +9,36 @@ function myFunction() {
     }
 
 }*/
+const projectTriggers = document.querySelectorAll(".project-trigger");
 
-          //function for adding scroll panel
-          gsap.registerPlugin(ScrollTrigger);
-          gsap.defaults({ease: "none", duration: 2});
-          
-          // create a sequence that moves 3 of the panels in from different directions 
-          const tl = gsap.timeline();
-          tl.from(".orange", {xPercent: -100})
-            .from(".purple", {xPercent: 100})
-            .from(".green", {yPercent: -100});
-          
-          // pin the container and link the animation to the scrollbar (scrub: true). We could easily embed this in the gsap.timeline() to shorten things a bit, but this is to show that you can create the ScrollTrigger separately if you prefer. 
-          ScrollTrigger.create({
-            animation: tl,
-            trigger: "#container",
-            start: "top top",
-            end: "+=4000", 
-            scrub: true,
-            pin: true,
-            anticipatePin: 1
-          });
-          
+projectTriggers.forEach(addTimeline);
+
+function addTimeline(project, index) {
+  const badges = project.querySelector(".project-badge");
+  const text = project.querySelector(".project-text");
+  
+  const timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: project,
+      start: "center bottom",
+      ease: "power2",
+      toggleActions: "play none none reverse"
+    }
+  })
+  .from(badges, {
+    x: -200,
+    opacity: 0,
+    duration: 0.5
+  })
+  .from(text, {
+    x: 200,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.2
+  }, "-=0.5");
+}
+
+      
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 
