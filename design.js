@@ -9,6 +9,41 @@ function myFunction() {
     }
 
 }*/
+
+          //function for adding scroll panel
+          $(function () { // wait for document ready
+            // init
+            var controller = new ScrollMagic.Controller();
+
+            // define movement of panels
+            var wipeAnimation = new TimelineMax()
+                // animate to second panel
+                .to("#slideCont", 0.5, { z: -150 })		// move back in 3D space
+                .to("#slideCont", 1, { x: "-25%" })	// move in to first panel
+                .to("#slideCont", 0.5, { z: 0 })				// move back to origin in 3D space
+                // animate to third panel
+                .to("#slideCont", 0.5, { z: -150, delay: 1 })
+                .to("#slideCont", 1, { x: "-50%" })
+                .to("#slideCont", 0.5, { z: 0 })
+                // animate to forth panel
+                .to("#slideCont", 0.5, { z: -150, delay: 1 })
+                .to("#slideCont", 1, { x: "-75%" })
+                .to("#slideCont", 0.5, { z: 0 });
+
+            // create scene to pin and link animation
+            new ScrollMagic.Scene({
+                triggerElement: "#pinCont",
+                triggerHook: "onLeave",
+                duration: "500%"
+            })
+                .setPin("#pinCont")
+                .setTween(wipeAnimation)
+                .addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        });
+
+  
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 
 // Set the date we're counting down to
