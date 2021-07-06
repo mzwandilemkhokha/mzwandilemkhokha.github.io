@@ -11,38 +11,26 @@ function myFunction() {
 }*/
 
           //function for adding scroll panel
-          $(function () { // wait for document ready
-            // init
-            var controller = new ScrollMagic.Controller();
-
-            // define movement of panels
-            var wipeAnimation = new TimelineMax()
-                // animate to second panel
-                .to("#slideCont", 0.5, { z: -150 })		// move back in 3D space
-                .to("#slideCont", 1, { x: "-25%" })	// move in to first panel
-                .to("#slideCont", 0.5, { z: 0 })				// move back to origin in 3D space
-                // animate to third panel
-                .to("#slideCont", 0.5, { z: -150, delay: 1 })
-                .to("#slideCont", 1, { x: "-50%" })
-                .to("#slideCont", 0.5, { z: 0 })
-                // animate to forth panel
-                .to("#slideCont", 0.5, { z: -150, delay: 1 })
-                .to("#slideCont", 1, { x: "-75%" })
-                .to("#slideCont", 0.5, { z: 0 });
-
-            // create scene to pin and link animation
-            new ScrollMagic.Scene({
-                triggerElement: "#pinCont",
-                triggerHook: "onLeave",
-                duration: "500%"
-            })
-                .setPin("#pinCont")
-                .setTween(wipeAnimation)
-                .addIndicators() // add indicators (requires plugin)
-                .addTo(controller);
-        });
-
-  
+          gsap.registerPlugin(ScrollTrigger);
+          gsap.defaults({ease: "none", duration: 2});
+          
+          // create a sequence that moves 3 of the panels in from different directions 
+          const tl = gsap.timeline();
+          tl.from(".orange", {xPercent: -100})
+            .from(".purple", {xPercent: 100})
+            .from(".green", {yPercent: -100});
+          
+          // pin the container and link the animation to the scrollbar (scrub: true). We could easily embed this in the gsap.timeline() to shorten things a bit, but this is to show that you can create the ScrollTrigger separately if you prefer. 
+          ScrollTrigger.create({
+            animation: tl,
+            trigger: "#container",
+            start: "top top",
+            end: "+=4000", 
+            scrub: true,
+            pin: true,
+            anticipatePin: 1
+          });
+          
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 

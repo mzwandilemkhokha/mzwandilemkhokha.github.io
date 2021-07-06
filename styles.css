@@ -165,21 +165,19 @@
   display: none;
 }
 /*Scroll style*/
-#pinCont {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  -webkit-perspective: 1000;
-          perspective: 1000;
-}
-#slideCont {
-  width: 400%; /* to contain 4 panels, each with 100% of window width */
-  height: 100%;
-}
 .panel {
-  height: 100%;
-  width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
-  float: left;
+  position: absolute;
+}
+
+#container {
+  width: 100%;
+  height: 100%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.panel.description {
+  position: relative;
 }
 
 
