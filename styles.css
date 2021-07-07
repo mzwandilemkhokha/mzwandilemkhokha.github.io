@@ -190,7 +190,7 @@ background-color: gainsboro;
 padding-top: 5%;
 padding-bottom:5%;
 width: 100%;
-}
+}/*
 section .appear{
   position: relative;
 	color: #fff;
@@ -235,7 +235,7 @@ section .appear.active:before {
 	transition-delay: .5s;
 }
 
-
+*/
 @media (prefers-reduced-motion: no-preference) {
   .container-animation {
     animation: wipe-enter 1s 1;
