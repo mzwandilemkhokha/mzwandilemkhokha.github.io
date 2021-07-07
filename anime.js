@@ -6,12 +6,12 @@ gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
   ease: "none",
   scrollTrigger: {
-    trigger: ".section appear",
+    trigger: ".container anim",
     pin: true,
     scrub: 1,
     snap: 1 / (sections.length - 1),
     // base vertical scrolling on how wide the container is so it feels more natural.
-    end: () => "+=" + document.querySelector(".section appear").offsetWidth
+    end: () => "+=" + document.querySelector(".container anim").offsetWidth
   }
 });
 
