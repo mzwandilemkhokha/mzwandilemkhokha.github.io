@@ -172,6 +172,9 @@
   flex-wrap: nowrap;
   background-color: blue;
 }
+.panel{
+  background-color: red;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
