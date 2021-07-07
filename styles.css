@@ -177,11 +177,11 @@
 }
 .anim{
   width: 600%;
-  height: 100%;
+ 
   display: flex;
   flex-wrap: nowrap;
-  background-color: blue;
-  overflow: hidden;
+  background-color: dimgray;
+  
 }
 
 section{
