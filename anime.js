@@ -1,17 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray('.panelcont');
+let sections = gsap.utils.toArray(".appear");
 
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
-  ease: 'none',
+  ease: "none",
   scrollTrigger: {
-    trigger: 'section',
+    trigger: "#panelcont",
     pin: true,
     scrub: 1,
     snap: 1 / (sections.length - 1),
     // base vertical scrolling on how wide the container is so it feels more natural.
-    end: () => "+=" + document.querySelector('section').offsetWidth
+    end: () => "+=" + document.querySelector("#panelcont").offsetWidth
   }
 });
 
