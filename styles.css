@@ -188,6 +188,7 @@ section{
 background-color: gainsboro;
 padding-top: 5%;
 padding-bottom:5%;
+width: 100%;
 }
 section .appear{
   position: relative;
