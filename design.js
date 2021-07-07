@@ -15,7 +15,7 @@ projectTriggers.forEach(addTimeline);
 
 function addTimeline(project, index) {
   const badges = project.querySelector(".project-badge");
-  const text = project.querySelector(".project-text");
+
   
   const timeline = gsap.timeline({
     scrollTrigger: {
@@ -30,12 +30,7 @@ function addTimeline(project, index) {
     opacity: 0,
     duration: 0.5
   })
-  .from(text, {
-    x: 200,
-    opacity: 0,
-    duration: 0.5,
-    stagger: 0.2
-  }, "-=0.5");
+  
 }
 
       
