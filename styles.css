@@ -165,7 +165,7 @@
   display: none;
 }
 /*Scroll style*/
-.container panelcont {
+.panelcont {
   width: 600%;
   height: 100%;
   display: flex;
