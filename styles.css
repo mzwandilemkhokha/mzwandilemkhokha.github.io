@@ -165,24 +165,12 @@
   display: none;
 }
 /*Scroll style*/
-.cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-.project {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-}
-
-.project badge {
-  width: 100%;
+.panelcont {
+  width: 600%;
   height: 100%;
-  object-fit: cover;
+  display: flex;
+  flex-wrap: nowrap;
 }
-
 
 
 @media (prefers-reduced-motion: no-preference) {
