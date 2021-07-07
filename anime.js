@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".appear");
+let sections = gsap.utils.toArray(".anim");
 
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
