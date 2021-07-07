@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray('.panel');
+let sections = gsap.utils.toArray('.panelcont');
 
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
