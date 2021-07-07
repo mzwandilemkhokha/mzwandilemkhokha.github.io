@@ -1,37 +1,5 @@
-/*Toggle between showing and hiding the navigation menu
-function myFunction() {
-    var x = document.getElementById("mylinks");
-    if (x.style.display === "block") {
-        x.style.display = "none"
-    }
-    else {
-        x.style.display ="block"
-    }
 
-}*/
-const projectTriggers = document.querySelectorAll(".project-trigger");
 
-projectTriggers.forEach(addTimeline);
-
-function addTimeline(project, index) {
-  const badges = project.querySelector(".project-badge");
-
-  
-  const timeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: project,
-      start: "center bottom",
-      ease: "power2",
-      toggleActions: "play none none reverse"
-    }
-  })
-  .from(badges, {
-    x: -200,
-    opacity: 0,
-    duration: 0.5
-  })
-  
-}
 
       
 
@@ -44,9 +12,7 @@ var countDownDate = new Date("Sep 30, 2021 00:00:00").getTime();
 var x = setInterval(function() {
 
   // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
+  var now = new Date().getTime(); // Find the distance between now an the count down date
   var distance = countDownDate - now;
 
   // Time calculations for days, hours, minutes and seconds
