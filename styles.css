@@ -177,6 +177,7 @@
 }
 .anim{
   width: 600%;
+  height:100%;
  
   display: flex;
   flex-wrap: nowrap;
