@@ -178,9 +178,7 @@ overflow-x: hidden;
   background-color: red;
 }
 .anim{
-
- 
-  display: flex;
+display: flex;
   flex-wrap: nowrap;
 
 
