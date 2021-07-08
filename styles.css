@@ -175,13 +175,13 @@
 .panel{
   background-color: red;
 }
-.anim{
-  width: 600%;
+container .anim{
+  width: 400%;
   height:100%;
  
   display: flex;
   flex-wrap: nowrap;
-  overflow: hidden;
+
 }
 
 section{
