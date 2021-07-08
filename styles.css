@@ -185,6 +185,7 @@ container .anim{
 }
 
 section{
+  display: flexbox;
 
 background-color: gainsboro;
 
