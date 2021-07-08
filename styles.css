@@ -175,9 +175,8 @@ overflow-x: hidden;
 .panel{
   background-color: red;
 }
-container .anim{
-  width: 500%;
-  height:100%;
+.anim{
+
  
   display: flex;
   flex-wrap: nowrap;
@@ -187,7 +186,15 @@ padding-left: 10%;
 }
 
 section{
-  display: flexbox;
+  
+  display: flex;
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  
+
 
 background-color: gainsboro;
 
