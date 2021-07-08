@@ -43,7 +43,7 @@
   .container{
   padding-left: 10%;
   padding-right: 10%;
- display: inline;
+
     }
   
     .main-info-section,
@@ -175,7 +175,7 @@ overflow-x: hidden;
 .panel{
   background-color: red;
 }
-#anim{
+.anim{
 
  
   display: flex;
