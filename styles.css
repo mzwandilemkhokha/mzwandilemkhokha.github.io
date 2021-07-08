@@ -179,7 +179,8 @@ margin: 0;
   background-color: red;
 }
 .anim{
-display: inline;
+display: flex;
+flex-wrap: nowrap;
   
 
 
