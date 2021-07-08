@@ -57,7 +57,7 @@
     }
     body{
       background-color: dimgray;
-
+overflow-x: hidden;
     }
     .backImg{
       width:100%;
