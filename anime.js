@@ -1,11 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
-const t1 =gsap.timeline();
+const tl =gsap.timeline();
 t1.to(".anim",5,{x:-window.innerWidth})
-.from("#web",5,{opacity:0,scale:3})
-.to(".three",5,{x:-window.innerWidth*3})
-.to(".four",5,{x:-window.innerWidth*4})
+.from(".two h1",5,{opacity:0,scale:3})
+.to(".anim",5,{x:-window.innerWidth*2})
+.from(".three h1",5,{opacity:0,scale:3})
+.to(".anim",5,{x:-window.innerWidth*3})
+.from(".four h1",5,{opacity:0,scale:3})
 ScrollTrigger.create({
-    animation: t1,
+    animation: tl,
     trigger:".anim",
     start:"center center",
     end: "+=4000",
