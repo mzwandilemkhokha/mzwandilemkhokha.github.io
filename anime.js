@@ -3,7 +3,7 @@ const t1 =gsap.timeline();
 t1.to(".anim",5,{x:-window.innerWidth})
 .to(".two",5,{x:-window.innerWidth*2})
 .to(".three",5,{x:-window.innerWidth*3})
-.tom(".four",5,{x:-window.innerWidth*4})
+.to(".four",5,{x:-window.innerWidth*4})
 ScrollTrigger.create({
     animation: t1,
     trigger:".anim",
