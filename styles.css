@@ -181,16 +181,13 @@
  
   display: flex;
   flex-wrap: nowrap;
-  background-color: dimgray;
   
 }
 
 section{
-  height: 100%;
+
 background-color: gainsboro;
-padding-top: 5%;
-padding-bottom:5%;
-width: 100%;
+
 }/*
 section .appear{
   position: relative;
