@@ -1,10 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 const t1 =gsap.timeline();
 t1.to(".anim",5,{x:-window.innerWidth})
-
-.from(".two",5,{x:-window.innerWidth*2})
+.to(".two",5,{x:-window.innerWidth*2})
 .to(".three",5,{x:-window.innerWidth*3})
-.from(".four",5,{x:-window.innerWidth*4})
+.tom(".four",5,{x:-window.innerWidth*4})
 ScrollTrigger.create({
     animation: t1,
     trigger:".anim",
