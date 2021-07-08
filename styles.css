@@ -184,7 +184,7 @@ display: flex;
 
 }
 
-section{
+.section{
   
   display: flex;
   flex-shrink: 0;
