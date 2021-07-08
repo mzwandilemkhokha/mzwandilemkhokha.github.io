@@ -181,7 +181,8 @@
  
   display: flex;
   flex-wrap: nowrap;
-
+padding: 0 auto;
+margin: 0 auto;
 }
 
 section{
