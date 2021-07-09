@@ -182,7 +182,7 @@ margin: 0;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.colactive, .collapsible:hover {
   background-color: #ccc;
 }
 
@@ -202,7 +202,7 @@ margin: 0;
   margin-left: 5px;
 }
 
-.active:after {
+.colactive:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
