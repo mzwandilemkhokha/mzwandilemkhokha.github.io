@@ -514,6 +514,7 @@ a.about-me-info p:nth-child(2),
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+
   }
 
 /* Make sure that all arrows are pointing leftwards */
@@ -537,12 +538,13 @@ a.about-me-info p:nth-child(2),
 /*the actual content*/
 .content{
   padding: 20px 30px;
-  background-color: #333;
+  background-color:whitesmoke;
   box-shadow: lemonchiffon;
   position: relative;
   border-radius: 6px;
   text-align: center;
   text-decoration-color: whitesmoke;
+
   }
 
 /* Make sure all circles are at the same spot */
