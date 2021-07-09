@@ -207,6 +207,10 @@ margin: 0;
 .colactive:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+/*center badges*/
+.center{
+transform: translate(-50%, -50%);
+}
 
 /*Scroll style*/
 
@@ -473,6 +477,8 @@ section .appear.active:before {
     padding-bottom: 5%;
   }
 
+  
+
   .about h1,
   .skills h1,
   .contact h1,
@@ -525,7 +531,7 @@ a.about-me-info p:nth-child(2),
     left: 60px;
     border: medium solid green;
     border-width: 10px 10px 10px 0;
-    border-color: transparent green transparent transparent;
+    border-color: transparent rgb(1, 88, 1) transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
