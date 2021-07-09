@@ -514,8 +514,8 @@ a.about-me-info p:nth-child(2),
   .contai {
     width: 100%;
     padding-left: 70px;
-    padding-right: 25px;
-    background-color: #FF9F55;
+    padding-right: 5%;
+    
 
   }
 
@@ -541,7 +541,7 @@ a.about-me-info p:nth-child(2),
 .content{
   padding: 20px 30px;
   background-color:whitesmoke;
-  box-shadow: lemonchiffon;
+  box-shadow: gainsboro;
   position: relative;
   border-radius: 6px;
   text-align: center;
