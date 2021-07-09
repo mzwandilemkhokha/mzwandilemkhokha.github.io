@@ -193,6 +193,7 @@ margin: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  align-items: center;
 }
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -485,7 +486,7 @@ section .appear.active:before {
   .about-me-info{
     width: 100%;
     background-color:  #333;
-    box-shadow: 0 0 1.2rem skyblue;
+    box-shadow: 0 0 1.2rem gainsboro;
   padding-right: 20%;
   padding-left: 20%;
   position:relative;
@@ -514,6 +515,7 @@ a.about-me-info p:nth-child(2),
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+    background-color: #FF9F55;
 
   }
 
@@ -550,8 +552,8 @@ a.about-me-info p:nth-child(2),
 /* Make sure all circles are at the same spot */
 
 .contact{
-  padding-right: 15%;
-  padding-left: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 form input,
   form textarea{
